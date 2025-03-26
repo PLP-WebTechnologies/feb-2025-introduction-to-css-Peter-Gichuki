@@ -1,0 +1,174 @@
+
+/* General Page Styles */
+body {
+    background-color: #b7d8b7;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navigation bar*/
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #228B22;
+    position: fixed;
+    top: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.logo {
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+span {
+    color: #f9004d;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #006400;
+    border-radius: 5px;
+}
+.btn {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+    margin-left: 20px;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    height: 98vh; /* Makes the intro section take up the full viewport height */
+    text-align: left;
+}
+.intro-text {
+    flex-basis: 50%; /* Takes up 50% of the width */
+    padding-right: 40px; /* Adds spacing between text and image */
+}
+.intro-text h3 {
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 400;
+    color: brown;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.intro-text h2 {
+    font-size: 40px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.intro-text h1 {
+    color: rgba(206, 22, 98, 0.8);
+    letter-spacing: 2px;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.intro-text p {
+    color: rgb(174, 15, 189);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.intro img {
+    flex-basis: 50%; /* Takes up 50% of the width */
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+button {
+    background-color: rgb(47, 47, 112);
+    color: rgb(176, 231, 25);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: all 0.4s;
+    display: inline-block;
+}
+button:hover {
+    background-color: brown;
+    border: 2px solid rgb(172, 55, 55);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Wonders Section */
+.wonders {
+    padding: 10px 1%;
+    text-align: center;
+}
+.wonders h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.wonder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.wonder img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.wonder h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.wonder p {
+    font-size: 16px;
+    color: #444;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+footer a {
+    color: #f9a825;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
